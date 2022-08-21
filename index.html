@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Julien Gournay</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="img/logoName_s.png" href="#" id="logoName">
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Compétence</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Expérience</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <img src="img/moon.png" id="icon">
+    </nav>
+
+    <section id="sec-1">
+        <div class="wrapper">
+            <div class="static-txt">Je suis</div>
+            <ul class="dynamic-txts">
+                <li><span>Développeur</span></li>
+                <li><span>Designer</span></li>
+                <li><span>Vidéaste</span></li>
+            </ul>
+        </div>
+        <a href="#sec-2">
+            <div class="scroll-down"></div>   
+        </a>
+    </section>
+
+    <section id="sec-2">
+        <div class="container">
+            <h1>Salut tout le monde</h1>
+        </div>
+    </section>
+
+
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/product-sans');
+    </style>
+    <script>
+        var icon = document.getElementById("icon");
+        var logo = document.getElementById("logoName")
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "img/sun.png";
+        logo.src = "img/logoName.png";
+
+    }else{
+        icon.src = "img/moon.png";
+        logo.src = "img/logoName_s.png";
+    }
+}
+    </script>
+</body>
+</html>
