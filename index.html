@@ -1,6 +1,7 @@
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8"/>
+
     <title>Julien Gournay</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" type="image/png" href="img/logo.png">
@@ -28,6 +29,7 @@
         <div class="wrapper">
             <div class="static-txt">Je suis</div>
             <ul class="dynamic-txts">
+                <li><span>Etudiant</span></li>
                 <li><span>Développeur</span></li>
                 <li><span>Designer</span></li>
                 <li><span>Vidéaste</span></li>
@@ -40,10 +42,40 @@
 
     <section id="sec-2">
         <div class="container">
-            <h1>Salut tout le monde</h1>
+            <h1>PATIENCE, LANCEMENT DU NOUVEAU SITE DANS</h1><br>
+
+            </pre>
+            <span class="countdown"><font size="4"><font face="arial"><div align="center">
+            <center><script language="JavaScript">
+            TargetDate = "01/01/2023 00:00 AM";
+            BackColor = false;
+            ForeColor = false;
+            CountActive = true;
+            CountStepper = -1;
+            LeadingZero = true;
+            DisplayFormat = "%%D%% &nbsp; %%H%% &nbsp; %%M%% &nbsp; %%S%% ";
+            FinishMessage = "Le déploiement du site est en cours !";
+            </script>
+            <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js">
+            </script></center></div></span>
+            <pre>
         </div>
     </section>
 
+    <section id="sec-3" class="circle">
+        <div>
+            <h2>Informatique / Robotique / Programmation / Création / Informatique / Robotique / Programmation / Création / Informatique / Robotique / Programmation / Création</h2>
+        </div>
+        <div>
+            <h2>Informatique / Robotique / Programmation / Création / Informatique / Robotique / Programmation / Création / Informatique / Robotique / Programmation / Création</h2>
+        </div>
+    </section>
+
+
+    
+    <footer>
+        <h6>©2022 par Julien Gournay.</h6>
+    </footer>
 
     <style>
         @import url('http://fonts.cdnfonts.com/css/product-sans');
@@ -52,17 +84,35 @@
         var icon = document.getElementById("icon");
         var logo = document.getElementById("logoName")
 
-icon.onclick = function(){
-    document.body.classList.toggle("dark-theme");
-    if(document.body.classList.contains("dark-theme")){
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
         icon.src = "img/sun.png";
         logo.src = "img/logoName.png";
 
-    }else{
+        }else{
         icon.src = "img/moon.png";
         logo.src = "img/logoName_s.png";
+        }
     }
-}
+    </script>
+
+
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
     </script>
 </body>
 </html>
