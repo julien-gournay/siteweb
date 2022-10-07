@@ -325,3 +325,13 @@ section {
     margin: 0;
     padding: 0;
 }
+
+
+#sec-2 .conteneur {
+    display: inline-block;
+}
+
+#sec-2 .bouton {
+	max-width: 50%;
+	height: auto;
+}
