@@ -20,3 +20,10 @@
     --color-text1:#edf2fc;
     --color-text2: #000000;
 }
+
+
+
+.dark-themeUser{ /* Couleur lors du theme user */
+    --color-bg1: #0E0E0E;
+
+}
